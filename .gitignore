@@ -1,5 +1,7 @@
 .idea/
 .idea
+.deta
+.deta/
 ### Python template
 # Byte-compiled / optimized / DLL files
 __pycache__/
