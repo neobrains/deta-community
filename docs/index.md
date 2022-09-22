@@ -23,3 +23,9 @@ Deta currently has 3 services
 - Micros : A serverless compute service
 - Base : A NoSQL database
 - Drive : A serverless file storage service
+
+## Frequently Asked Questions
+Read the [FAQs](/faq) page to know more about FAQs.
+
+## Code Templates
+Check out the Codes section to find code templates for various languages.
