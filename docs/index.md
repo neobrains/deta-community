@@ -9,8 +9,7 @@ description: Welcome to Basic | Deta. Here you can find the basic docs, frequent
 ## What is Deta?
 
 Deta is a platform for building serverless applications. It provides a simple way to build, deploy, and scale your applications.
-
-Deta is a serverless platform that allows you to build and deploy your applications without having to worry about the underlying infrastructure.
+You don't have to worry about managing servers, databases, or scaling your application. Deta handles all of that for you.
 
 !!! info "What is serverless?"
     Serverless is a cloud computing execution model in which the cloud provider runs the server, and dynamically manages the allocation of machine resources.
