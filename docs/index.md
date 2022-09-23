@@ -24,6 +24,10 @@ Deta currently has 3 services
 - Base : A NoSQL database
 - Drive : A serverless file storage service
 
+## Read The Docs
+It is recommended to read the official documentation for Deta [here](https://docs.deta.sh/) before asking for any
+help. It consists of all the information you need to get started with Deta.
+
 ## Frequently Asked Questions
 Read the [FAQs](/faq) page to know more about FAQs.
 

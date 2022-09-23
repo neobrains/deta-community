@@ -29,7 +29,18 @@ if __name__ == "__main__":
 # Here main is the file name and app is the name of the FastAPI app
 ```
 
-Run it with `uvicorn main:app --reload` or `uvicorn main:app --reload --port 8000`. Or you can just `python main.py`
+Run it with `uvicorn main:app --reload` or `uvicorn main:app --reload --port 8000`. 
+
+Or you can just `python main.py`
+
+!!! tip "Automatically deploy to Deta"
+    If you have already deployed the application to deta, you can use
+    ```bash
+    deta watch
+    ```
+    to automatically deploy the application when you make changes to the code.
+
+    For more options, check out the [here](https://docs.deta.sh/docs/cli/commands#deta-watch)
 
 ## Deploy to Deta
 Install the Deta CLI and run the following command in the same directory as the `main.py` file.

@@ -17,6 +17,10 @@ async def index(request: Request):
 async def faq(request: Request):
     return templates.TemplateResponse("faq/index.html", {"request": request})
 
+@app.get("/getting-started")
+async def getting_started(request: Request):
+    return templates.TemplateResponse("getting-started/index.html", {"request": request})
+
 @app.get("/search/search_index.json")
 async def search_index():
     return FileResponse("site/search/search_index.json")

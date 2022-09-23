@@ -70,6 +70,7 @@ copyright: Copyright &copy; 2022 - 2022 Mini x Deta
 
 nav:
   - Homepage: index.md
+  - Getting Started: getting-started.md
   - Common FAQs: faq.md
   - Codes:
       - simple-fastapi-hello-world: codes/simple-fastapi-hello-world.md
