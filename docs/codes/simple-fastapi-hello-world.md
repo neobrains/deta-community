@@ -3,7 +3,7 @@ title: Simple FastAPI Application
 description: A sample FastAPI application
 comments: true
 ---
-# This is a sample , soon update
+# Simple FastAPI Hello World Application
 
 ## Requirements
 ```txt
