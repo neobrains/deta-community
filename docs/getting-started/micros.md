@@ -4,13 +4,13 @@
 A Micro is basically a "serverless server" that runs your code. More about serverless [here](/#what-is-serverless).
 
 Create a new directory where your Micro's code will be located.
-```bash
+```console
 $ mkdir my-micro
 $ cd my-micro
 ```
 
 Run the `deta new` command to create a new Micro.
-```bash
+```console
 $ deta new --python
 ```
 
@@ -24,8 +24,8 @@ In the output of the command, you will see a URL that looks like this: `https://
 The `.deta` folder contains some metadata about the Micro, it can be safely ignored and excluded from version control.
 
 The `deta new` command also lets you specify the Micro name, project name, and runtime.
-```bash
-deta new --name <micro-name> --project <project-name> --runtime <runtime>
+```console
+$ deta new --name <micro-name> --project <project-name> --runtime <runtime>
 ```
 
 - `<micro-name>` is the name of the Micro you want to create.
@@ -36,7 +36,7 @@ Full command reference can be found [here](https://docs.deta.sh/docs/cli/command
 
 ## Deploying your Micro
 Deploying your Micro is as easy as:
-```bash
+```console
 $ deta deploy
 ```
 

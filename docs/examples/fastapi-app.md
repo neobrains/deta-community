@@ -25,7 +25,7 @@ Run it with `uvicorn main:app --reload`. Visit http://127.0.0.1:8000/ to see you
 If you haven't already installed the Deta CLI, read the [Getting Started](/getting-started) section.
 
 Now, lets create a new Micro under the default project called `fastapi-app`.
-```bash
+```console
 $ deta new --name fastapi-app --python
 ```
 

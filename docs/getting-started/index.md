@@ -2,7 +2,7 @@
 
 Install the Deta CLI by following the instructions [here](https://docs.deta.sh/docs/cli/install).
 Log in using the `deta login` command.
-```bash
+```console
 $ deta login
 ```
 
