@@ -1,18 +1,7 @@
----
-title: Getting Started with Deta
-description: Get started with Deta with this guide.
----
-
-Install the Deta CLI by following the instructions [here](https://docs.deta.sh/docs/cli/install).
-Log in using the `deta login` command.
-```bash
-$ deta login
-```
-
-Can't login to the CLI through the browser? Check out the [FAQs](/faq/cli#issues-with-deta-login).
+# Getting Started with Micros
 
 ## Creating a Micro
-A Micro is basically a "serverless server" that runs your code. More about Micros [here](/TODO).
+A Micro is basically a "serverless server" that runs your code. More about serverless [here](/#what-is-serverless).
 
 Create a new directory where your Micro's code will be located.
 ```bash
@@ -55,12 +44,3 @@ After the command completes, visit your Micro's URL and see your changes live!
 
 !!! tip
     You can also use `deta watch` to watch for changes in the directory and deploy the Micro automatically.
-
-## Creating a Project
-By default your account has one project named `default`. You can create as many new projects as you like to organize and group your Micros, Bases, and Drives.
-To create a new project, go to the [Deta Dashboard](https://web.deta.sh/) and create a new project by clicking on the `+ New Project` button in dropdown menu.
-
-![image](images/create-project-1.png)
-
-!!! warning
-    Please note there is currently no way to delete a project.
