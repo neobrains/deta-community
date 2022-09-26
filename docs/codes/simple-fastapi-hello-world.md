@@ -3,7 +3,7 @@ title: Simple FastAPI Application
 description: A sample FastAPI application
 comments: true
 ---
-# This is a sample , soon update
+# Simple FastAPI Hello World Application
 
 ## Requirements
 ```txt
@@ -51,6 +51,6 @@ deta deploy
 `--project` is optional ( `default` is used if not specified )
 So,
 ```sh
-det new --name name_of_app --python
+deta new --name name_of_app --python
 ```
 Also Works! Now go to the url given by the command and you will see the app running!
