@@ -8,7 +8,6 @@ Website: https://basic.deta.dev
 Install the required dependencies.
 ```console
 $ pip install -r requirements.txt
-$ pip install -r requirements-dev.txt
 ```
 
 To preview the site while editing, use the following command.
