@@ -7,20 +7,20 @@ theme:
   logo: images/ship_purple.png
   palette:
     # Palette toggle for light mode
-    - scheme: default
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - scheme: slate
       primary: blue grey
       accent: light blue
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
+
+    # Palette toggle for dark mode
+    - scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
   features:
     - navigation.instant
@@ -30,6 +30,8 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - navigation.indexes
+    - toc.follow
 
 markdown_extensions:
   - admonition
@@ -44,9 +46,12 @@ markdown_extensions:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables
+  - toc:
+        permalink: true
 
 plugins:
   - search
+  - tags
 
 extra:
   homepage: https://basic.deta.dev
