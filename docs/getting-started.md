@@ -1,72 +1,66 @@
 ---
-title: How-To Guide For Deta
-description: Get started with Deta by following this guide.
+title: Getting Started with Deta
+description: Get started with Deta with this guide.
 ---
-# How-To
-This page consists of a guide on how to get started with Deta.
 
-## Getting Started
 Install the Deta CLI by following the instructions [here](https://docs.deta.sh/docs/cli/install).
+Log in using the `deta login` command.
+```bash
+$ deta login
+```
 
-Can't login to the CLI via the browser? Try the other login methods [here](https://docs.deta.sh/docs/cli/auth#deta-access-tokens).
+Can't login to the CLI through the browser? Check out the [FAQs](/faq/cli#issues-with-deta-login).
 
-Also, if you are using browser based login, for browsers like Brave, you need to `allow all trackers and ads` in brave shield
-for it to work
+## Creating a Micro
+A Micro is basically a "serverless server" that runs your code. More about Micros [here](/TODO).
+
+Create a new directory where your Micro's code will be located.
+```bash
+$ mkdir my-micro
+$ cd my-micro
+```
+
+Run the `deta new` command to create a new Micro.
+```bash
+$ deta new --python
+```
+
+!!! note
+    `--python` specifies that the Micro will be running Python code. If you want to make a Node.js Micro, use `--node` instead.
+    For the rest of this guide, we will be using Python.
+
+This will create a new Micro named `my-micro` under your default project. It will also create a `main.py` file with a basic "Hello World" example.
+In the output of the command, you will see a URL that looks like this: `https://<micro-id>.deta.dev`. You can use this URL to access your Micro.
+
+The `.deta` folder contains some metadata about the Micro, it can be safely ignored and excluded from version control.
+
+The `deta new` command also lets you specify the Micro name, project name, and runtime.
+```bash
+deta new --name <micro-name> --project <project-name> --runtime <runtime>
+```
+
+- `<micro-name>` is the name of the Micro you want to create.
+- `<project-name>` is the name of the project you want to create the Micro under.
+- `<runtime>` is the language and version of the runtime you want to use. For example, `--runtime python3.9` or `--runtime node14`.
+
+Full command reference can be found [here](https://docs.deta.sh/docs/cli/commands#deta-new).
+
+## Deploying your Micro
+Deploying your Micro is as easy as:
+```bash
+$ deta deploy
+```
+
+After the command completes, visit your Micro's URL and see your changes live!
+
+!!! tip
+    You can also use `deta watch` to watch for changes in the directory and deploy the Micro automatically.
 
 ## Creating a Project
-Go to the [Deta Dashboard](https://web.deta.sh/) and create a new project by clicking on the `New Project` button in dropdown menu.
+By default your account has one project named `default`. You can create as many new projects as you like to organize and group your Micros, Bases, and Drives.
+To create a new project, go to the [Deta Dashboard](https://web.deta.sh/) and create a new project by clicking on the `+ New Project` button in dropdown menu.
 
 ![image](images/create-project-1.png)
 
-Default project is 'default'.
-
-## Creating a Micro
-Go to the directory where the code you want to deploy is located.
-
-!!! note "This is an example of FastAPI"
-    Add `requirements.txt` file to the directory if you are using a framework like FastAPI or Flask.
-
-    ```txt
-    fastapi
-    uvicorn[standard]
-    ```
-
-The root of the directory should contain a `main.py` file.
-
-If you are logged in to the CLI, you can run the following command to deploy the micro.
-
-```bash
-deta new --name <micro-name> --python --project <project-name>
-```
-
-* `micro-name` is the name of the micro you want to create.
-* `project-name` is the name of the project you want to deploy the micro to.
-* `--python` is the language of the micro.
-
-!!! help "Sample Command"
-    ```bash
-    deta new --name hello --python --project default
-    ```
-
-After running the command, a new micro will be created and a `.deta` folder will be created in the directory.
-
-## Deploying a Micro
-To deploy the micro, run the following command.
-
-```bash
-deta deploy
-```
-
-It will return a URL which you can use to access the micro.
-
-You can also add subdomains and custom domains to the micro via the dashboard.
-
-!!! tip "There are more deploy commands"
-    You can also use `deta watch` to watch for changes in the directory and deploy the micro automatically.
-
-!!! note "Using a .env file?"
-    If you are using a `.env` file, you can use `deta update -e .env` after deploying the micro to update
-    the environment variables (`.env` in same directory as of in which command ran).
-
-## More About Deta CLI
-You can find more about the Deta CLI [here](https://docs.deta.sh/docs/cli/commands/).
+!!! warning
+    Please note there is currently no way to delete a project.
