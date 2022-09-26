@@ -6,21 +6,21 @@ theme:
   custom_dir: overrides
   logo: images/ship_purple.png
   palette:
-    # Palette toggle for light mode
-    - scheme: default
-      primary: blue grey
-      accent: light blue
-      toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
     # Palette toggle for dark mode
     - scheme: slate
       primary: blue grey
       accent: light blue
       toggle:
-        icon: material/toggle-switch
+        icon: material/lightbulb-outline
         name: Switch to light mode
+
+    # Palette toggle for light mode
+    - scheme: default
+      primary: blue grey
+      accent: light blue
+      toggle:
+        icon: material/lightbulb
+        name: Switch to dark mode
 
   features:
     - navigation.instant
