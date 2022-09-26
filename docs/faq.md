@@ -1,6 +1,6 @@
 ---
 title: Common FAQs
-description: Frequently asked questions about Deta
+description: Frequently asked questions about Deta and it's services.
 comments: true
 ---
 # Common FAQs asked by people
