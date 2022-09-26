@@ -1,4 +1,1 @@
-uvicorn[standard]~=0.18.3
 fastapi~=0.85.0
-mkdocs-material~=8.5.3
-mkdocs-git-revision-date-localized-plugin~=1.1.0
