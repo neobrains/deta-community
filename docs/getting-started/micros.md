@@ -44,3 +44,5 @@ After the command completes, visit your Micro's URL and see your changes live!
 
 !!! tip
     You can also use `deta watch` to watch for changes in the directory and deploy the Micro automatically.
+
+If you make any changes to the Micro, you can redeploy it by running the `deta deploy` command again.

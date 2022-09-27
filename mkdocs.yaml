@@ -1,8 +1,9 @@
 site_name: Basic Deta
 site_description: Deta Docs For Noobs
 repo_url: https://github.com/AyushSehrawat/basic-deta
+edit_uri: 'tree/main/docs/'
 repo_name: Basic Deta
-copyright: Copyright &copy; 2022 - 2022 Mini x Deta
+copyright: Copyright &copy; 2022 Basic Deta
 
 theme:
   name : material
