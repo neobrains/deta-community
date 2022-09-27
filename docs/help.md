@@ -12,6 +12,6 @@ If your question is related to accounts or the platform in general, please email
 Otherwise,
 
 - Read the [official documentation](https://docs.deta.sh/)
-- Search your question in [GitHub Discussions](https://github.com/orgs/deta/discussions)
 - Read the [frequently asked questions](/faq)
+- Search your question in [GitHub Discussions](https://github.com/orgs/deta/discussions)
 - If your question was not answered, ask in [GitHub Discussions](https://github.com/orgs/deta/discussions)  

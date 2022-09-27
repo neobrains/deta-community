@@ -3,6 +3,7 @@ title: Simple FastAPI Application
 description: A sample FastAPI application
 comments: true
 ---
+
 # Simple FastAPI App
 This tutorial will show you how to create a simple FastAPI application on Deta.
 
@@ -75,7 +76,6 @@ And an image for good measure.
 `static/ram.jpg`
 
 <img src="../../code/example_fastapi_app/static/ram.jpg" alt="ram.jpg" width="200" />
-
 
 ### Deploy
 Deploy as before with `deta deploy`.
