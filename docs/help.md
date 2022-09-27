@@ -7,6 +7,7 @@ description: How to get help with Deta
 
 ## **Before you ask**
 Before you ask for help in the Discord server, please read the following:
+
 If your question is related to accounts or the platform in general, please email <a href="mailto:team@deta.sh">team@deta.sh</a>.
 Otherwise,
 

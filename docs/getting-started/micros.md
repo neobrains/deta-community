@@ -30,7 +30,7 @@ $ deta new --name <micro-name> --project <project-name> --runtime <runtime>
 
 - `<micro-name>` is the name of the Micro you want to create.
 - `<project-name>` is the name of the project you want to create the Micro under.
-- `<runtime>` is the language and version of the runtime you want to use. For example, `--runtime python3.9` or `--runtime node14`.
+- `<runtime>` is the language and version of the runtime you want to use. For example, `python3.9` or `node14`.
 
 Full command reference can be found [here](https://docs.deta.sh/docs/cli/commands#deta-new).
 
