@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block content %}
+<h1>404 - Not Found</h1>
+<img id="image" style="max-height: 400px; max-width: 400px; height: auto; width: auto;">
+
+<script>
+  const imageURLs = [
+    "https://yacdn.deta.dev/cdn/wrqakqmc",
+    "https://yacdn.deta.dev/cdn/spybvyho",
+    "https://yacdn.deta.dev/cdn/sihpxljs",
+    "https://yacdn.deta.dev/cdn/jitjqpdv",
+    "https://yacdn.deta.dev/cdn/ryboyoir",
+    "https://yacdn.deta.dev/cdn/exbrxjlh",
+  ]
+  document.getElementById("image").src = imageURLs[Math.floor(Math.random() * imageURLs.length)];
+</script>
+{% endblock %}
