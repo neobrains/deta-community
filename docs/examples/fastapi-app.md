@@ -1,48 +1,51 @@
 ---
-title: Simple FastAPI Application
+title: FastAPI Application Example
 description: A sample FastAPI application
 comments: true
 ---
 
-# Simple FastAPI App
+# FastAPI App Example
 This tutorial will show you how to create a simple FastAPI application on Deta.
 
 ## Super Simple App
+To illustrate how easy it is to create an app on Deta, we'll start with a bare-bones example.
 
-### Requirements
-To start, we need to install `fastapi` to create the app, and `uvicorn` to run it.
+### Setup
+First, we need to install `fastapi` to create the app, and `uvicorn` to run it.
 ```txt title="requirements.txt"
 fastapi
 uvicorn[standard]
 ```
 
 ### Code
-This is the most basic FastAPI application you can make.
+This is just about the most basic FastAPI application you can make.
 ```py title="main.py"
 --8<-- "docs/code/example_fastapi_app/main_simple.py"
 ```
 
-Run it with `uvicorn main:app --reload`. Visit http://127.0.0.1:8000/ to see your app in action.
+Run it locally with `uvicorn main:app --reload`. Visit http://127.0.0.1:8000/ to see your app in action.
 
 ### Deploy to Deta
 If you haven't already installed the Deta CLI, read the [Getting Started](/getting-started) section.
 
-Now, lets create a new Micro under the default project called `fastapi-app`.
+Now, let's create a new Micro under the default project called `fastapi-app`.
 ```console
 $ deta new --name fastapi-app --python
 ```
 
 The current code will automatically be deployed, but once you make changes you will need to re-deploy with `deta deploy`.
 
-!!! tip "Automatically deploy to Deta"
-    If you have already deployed the application to deta, you can use `deta watch`
+!!! tip
+    After you've created the Micro, you can use `deta watch`
     to automatically deploy the application when you make changes to the code.
+
+To see your Micro in action, visit the URL provided by the CLI.
 
 ## A Slightly More Complex App
 Most apps however will need to do more than just return a string.
-Lets add HTML templates, CSS styles, and some JavaScript to our app to give it some actual frontend.
+Let's add HTML templates, CSS styles, and some JavaScript to our app to give it some actual frontend.
 
-### Requirements
+### Setup
 This will require installing one more package:
 ```txt title="requirements.txt"
 fastapi
