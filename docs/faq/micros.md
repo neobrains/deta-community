@@ -45,6 +45,24 @@
     This means that your Micro took more than 10 seconds to respond to the request. Check for any code that might take a long time to execute.
     If you really need more than 10 seconds, you can increase the timeout by following the instructions [here](https://docs.deta.sh/docs/micros/faqs_micros/#how-can-i-request-for-a-timeout-or-memory-increase).
 
+### How do I link my code to an existing Micro?
+!!! help ""
+    If you don't have a `.deta` folder for a Micro anymore, but would like to use that Micro again,
+    follow the steps below to regenerate the `.deta` folder.
+
+    ```sh
+    # Make a temporary directory.
+    mkdir temp
+    cd temp
+    # Clone your Micro.
+    deta clone --project <project-name> --name <micro-name>
+    # Move the new .deta folder to your project root.
+    mv .deta ..
+    # Delete the temporary directory.
+    cd ..
+    rm -rf temp
+    ```
+
 ----
 
 More FAQs regarding Micros can be found [here](https://docs.deta.sh/docs/micros/faqs_micros).
