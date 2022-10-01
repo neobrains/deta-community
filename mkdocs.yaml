@@ -28,6 +28,8 @@ theme:
         name: Switch to dark mode
 
   features:
+    - announce.dismiss
+    - header.autohide
     - navigation.instant
     - navigation.tracking
     - navigation.expand
