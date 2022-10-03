@@ -1,12 +1,12 @@
 site_name: Basic Deta
 site_description: Deta Docs For Noobs
 repo_url: https://github.com/AyushSehrawat/basic-deta
-edit_uri: 'tree/main/docs/'
+edit_uri: "tree/main/docs/"
 repo_name: Basic Deta
 copyright: Copyright &copy; 2022 Basic Deta
 
 theme:
-  name : material
+  name: material
   custom_dir: overrides
   favicon: images/deta_logo.svg
   logo: images/deta_logo.svg
@@ -99,19 +99,19 @@ extra_javascript:
 nav:
   - Home: index.md
   - Getting Started:
-    - getting-started/index.md
-    - Micros: getting-started/micros.md
-    - Base: getting-started/base.md
-    - Drive: getting-started/drive.md
-    - Projects: getting-started/projects.md
+      - getting-started/index.md
+      - Micros: getting-started/micros.md
+      - Base: getting-started/base.md
+      - Drive: getting-started/drive.md
+      - Projects: getting-started/projects.md
   - Help: help.md
   - Frequently Asked Questions:
-    - faq/index.md
-    - Micros: faq/micros.md
-    - Base: faq/base.md
-    - Drive: faq/drive.md
-    - CLI: faq/cli.md
+      - faq/index.md
+      - Micros: faq/micros.md
+      - Base: faq/base.md
+      - Drive: faq/drive.md
+      - CLI: faq/cli.md
   - Examples:
-    - examples/index.md
-    - FastAPI App: examples/fastapi-app.md
-    - FastAPI Drive CDN: examples/fastapi-drive-cdn.md
+      - examples/index.md
+      - FastAPI App: examples/fastapi-app.md
+      - FastAPI Drive CDN: examples/fastapi-drive-cdn.md
