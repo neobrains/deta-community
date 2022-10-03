@@ -106,10 +106,12 @@ nav:
     - Projects: getting-started/projects.md
   - Help: help.md
   - Frequently Asked Questions:
-      - Micros: faq/micros.md
-      - Base: faq/base.md
-      - Drive: faq/drive.md
-      - CLI: faq/cli.md
+    - faq/index.md
+    - Micros: faq/micros.md
+    - Base: faq/base.md
+    - Drive: faq/drive.md
+    - CLI: faq/cli.md
   - Examples:
-      - FastAPI App: examples/fastapi-app.md
-      - FastAPI Drive CDN: examples/fastapi-drive-cdn.md
+    - examples/index.md
+    - FastAPI App: examples/fastapi-app.md
+    - FastAPI Drive CDN: examples/fastapi-drive-cdn.md
