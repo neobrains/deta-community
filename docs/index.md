@@ -54,8 +54,11 @@ It contains much more in-depth information and references.
 ## Tutorials
 Check out the [Getting Started](/getting-started) page for a guide on how to get started with Deta.
 
+## Help
+Make sure to read the [Help](/help) section for some guidelines on how to ask for help.
+
 ## Frequently Asked Questions
-Read the [FAQs](/faq) page to know more about FAQs.
+Read the [FAQs](/faq) page for solutions to common problems.
 
 ## Code Examples
 Check out the [Examples](/examples) section for code examples and common snippets.
