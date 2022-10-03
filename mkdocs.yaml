@@ -94,6 +94,10 @@ extra:
       link: https://www.deta.sh/
       name: Deta Website
 
+  analytics:
+    provider: google
+    property: G-ZC7B3C07TH
+
 extra_javascript:
   - javascripts/shortcuts.js
 
