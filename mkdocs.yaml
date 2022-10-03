@@ -1,4 +1,5 @@
 site_name: Basic Deta
+site_url: https://basic.deta.dev
 site_description: Deta Docs For Noobs
 repo_url: https://github.com/AyushSehrawat/basic-deta
 edit_uri: "tree/main/docs/"
