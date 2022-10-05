@@ -156,3 +156,11 @@ For more information on each of the things we've used in this example, visit the
 [Uvicorn docs](https://www.uvicorn.org/),
 [Requests docs](https://requests.readthedocs.io/)
 and [Deta docs](https://docs.deta.sh).
+
+## Bonus
+If you're feeling up to it, you can try to add some more features to your CDN, such as file metadata, authentication, or even a web interface.
+
+For instance, file metadata could be stored in a Deta Base.
+```py title="main.py" hl_lines="12 32-38 41 50-57"
+--8<-- "docs/code/example_fastapi_drive_cdn/main_bonus.py"
+```
