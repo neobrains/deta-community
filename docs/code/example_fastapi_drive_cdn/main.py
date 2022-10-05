@@ -3,7 +3,7 @@ import string
 
 from deta import Deta
 from fastapi import FastAPI, HTTPException, Request, UploadFile
-from fastapi.responses import RedirectResponse, StreamingResponse
+from fastapi.responses import Response, RedirectResponse
 
 app = FastAPI()
 deta = Deta()
@@ -29,8 +29,8 @@ async def cdn(id: str):
     if file is None:
         raise HTTPException(status_code=404)
     headers = {"Cache-Control": "public, max-age=86400"}
-    return StreamingResponse(
-        file.iter_chunks(),
+    return Response(
+        content=file.read(),
         media_type="application/octet-stream",
         headers=headers,
     )

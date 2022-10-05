@@ -7,7 +7,7 @@ comments: true
 # FastAPI Drive CDN Example
 This tutorial will show you how to create a simple bare-bones CDN using a Deta Drive and a Micro.
 
-### Setup
+## Setup
 We'll start by installing the necessary packages.
 ```txt title="requirements.txt"
 deta
@@ -18,24 +18,10 @@ uvicorn[standard]
 
 `deta` will be used to access the Deta Drive, `fastapi` to create the app, and `python-multipart` for receiving files. As always, we need `uvicorn` to run the app.
 
-In order for your app to access Deta services such as Base and Drive, you need to set the `DETA_PROJECT_KEY` environment variable. You can find your project key in the [Deta Dashboard](https://web.deta.sh).
+In order for your app to access Deta services such as Base and Drive, you need to set the `DETA_PROJECT_KEY` environment variable.
+Check out the section on [project keys](/getting-started/general#project-keys) for instructions on how to do that.
 
-=== "Linux/macOS"
-    ```console
-    $ export DETA_PROJECT_KEY=<your-project-key>
-    ```
-
-=== "Windows PowerShell"
-    ```powershell
-    > $env:DETA_PROJECT_KEY=<your-project-key>
-    ```
-
-=== "Windows Command Prompt"
-    ```shell
-    > set DETA_PROJECT_KEY=<your-project-key>
-    ```
-
-### Code
+## Code
 Here is the Python code that will handle the API requests and responses.
 ```py title="main.py"
 --8<-- "docs/code/example_fastapi_drive_cdn/main.py"
@@ -50,7 +36,7 @@ import string
 
 from deta import Deta
 from fastapi import FastAPI, HTTPException, Request, UploadFile
-from fastapi.responses import RedirectResponse, StreamingResponse
+from fastapi.responses import Response, RedirectResponse
 ```
 
 Next, we create a `FastAPI` app instance and an instance of the `Deta` class.
@@ -91,7 +77,7 @@ def generate_id(length: int = 8) -> str:
 Next, lets add an endpoint to download files from our CDN.
 In this function we first try to get the file from the `storage` Drive.
 If the file is not found (indicated by a `None` value), we respond with a `404` error.
-Finally, we return the file in a [`StreamingResponse`](https://fastapi.tiangolo.com/advanced/custom-response/#streamingresponse)
+Finally, we return the file in a [`Response`](https://fastapi.tiangolo.com/advanced/custom-response/#response)
 and specify the MIME type as `application/octet-stream` to indicate that the file could be any binary data.
 
 A CDN without caching would be inefficient, so we'll add a `Cache-Control` header to the response.
@@ -105,8 +91,8 @@ async def cdn(id: str):
     if file is None:
         raise HTTPException(status_code=404)
     headers = {"Cache-Control": "public, max-age=86400"}
-    return StreamingResponse(
-        file.iter_chunks(),
+    return Response(
+        content=file.read(),
         media_type="application/octet-stream",
         headers=headers,
     )
@@ -121,7 +107,7 @@ async def root():
     return RedirectResponse("/docs")
 ```
 
-### Deploy
+## Deploy
 Now we'll create a new Micro and deploy our code to it.
 ```console
 $ deta new --name fastapi-drive-cdn --python
@@ -135,7 +121,7 @@ $ deta new --name fastapi-drive-cdn --python
 !!! info "Fun Fact"
     This exact CDN is used to serve some files for this site, such as the images on the [404 page](/404).
 
-### Use
+## Use
 Now that we have our CDN up and running, let's try it out.
 You can either navigate to the CDN's root path in your browser and use the interactive API documentation to upload a file,
 use a tool like `cURL` or `Postman`, or use the CDN from your own code.
