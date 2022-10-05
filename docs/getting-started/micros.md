@@ -1,8 +1,8 @@
 # Getting Started with Micros
-
-## Creating a Micro
+What is a "Micro"?
 A Micro is basically a "serverless server" that runs your code. More about serverless [here](/#what-is-serverless).
 
+## Creating a Micro
 Create a new directory where your Micro's code will be located.
 ```console
 $ mkdir my-micro
@@ -14,7 +14,7 @@ Run the `deta new` command to create a new Micro.
 $ deta new --python
 ```
 
-!!! note
+!!! info
     `--python` specifies that the Micro will be running Python code. If you want to make a Node.js Micro, use `--node` instead.
     For the rest of this guide, we will be using Python.
 
@@ -40,9 +40,8 @@ Deploying your Micro is as easy as:
 $ deta deploy
 ```
 
-After the command completes, visit your Micro's URL and see your changes live!
+That's it! After the command completes, visit your Micro's URL and see your changes live!
+If you make any changes to the Micro, you can redeploy it by running the `deta deploy` command again.
 
 !!! tip
     You can also use `deta watch` to watch for changes in the directory and deploy the Micro automatically.
-
-If you make any changes to the Micro, you can redeploy it by running the `deta deploy` command again.
