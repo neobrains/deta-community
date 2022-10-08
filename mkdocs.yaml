@@ -105,7 +105,6 @@ nav:
   - Home: index.md
   - Getting Started:
       - getting-started/index.md
-      - General: getting-started/general.md
       - Micros: getting-started/micros.md
       - Base: getting-started/base.md
       - Drive: getting-started/drive.md
