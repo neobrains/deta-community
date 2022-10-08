@@ -39,7 +39,7 @@ You can find your project keys in the [Deta Dashboard](https://web.deta.sh).
 !!! warning
     Your project key is a secret, so please keep it safe.
 
-It is good practice to store your project key in an environment variable called `DETA_PROJECT_KEY`, rather than hardcoding it into your code.
+It is good practice to store your project key in an environment variable named `DETA_PROJECT_KEY`, rather than hardcoding it into your code.
 This particular environment variable name is automatically picked up by the Deta SDKs, so you don't need to do anything special in your code to use it.
 To set this environment variable, you can use a terminal command like the ones below.
 Replace `<your-project-key>` with your actual project key.
@@ -65,5 +65,30 @@ This file should be ignored by your version control system, so your secrets don'
 DETA_PROJECT_KEY=<your-project-key>
 ```
 
-For more information on using `.env` files, see the [python-dotenv](https://pypi.org/project/python-dotenv/) documentation.
-TODO
+To load this file, you can use a package like [python-dotenv](https://pypi.org/project/python-dotenv/) for Python, [dotenv](https://www.npmjs.com/package/dotenv) for Node.js, or a shell command which does not require any extra code.
+
+=== "Linux/macOS"
+    ```shell
+    set -a; source .env; set +a
+    ```
+
+=== "Windows PowerShell"
+    ```powershell
+    foreach ($line in Get-Content ".env")
+    {
+        if (-not [string]::IsNullOrWhiteSpace($line) -and -not $line.StartsWith("#"))
+        {
+            $key, $value = $line.Split("=")
+            $key = $key.Trim()
+            $value = $value.Trim()
+            $value = $value.Replace("`"", "")
+            $value = $value.Replace("`'", "")
+            [System.Environment]::SetEnvironmentVariable($key, $value, "Process")
+        }
+    }
+    ```
+
+=== "Windows Command Prompt"
+    ```shell
+    for /f "eol= delims=" %i in ('type ".env"') do set %i
+    ```
