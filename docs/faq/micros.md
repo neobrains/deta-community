@@ -23,6 +23,13 @@
     - Buttons
     - Dropdowns
 
+### I'm getting an "Unsupported framework" error
+!!! help ""
+    Make sure to include the following line of code at the end of your `index.js` file.
+    ```js
+    module.exports = app;
+    ```
+
 ### I'm unable to serve images or fonts
 !!! help ""
     Add `BINARY_CONTENT_TYPES=image/*,font/*` to a `.env` file in your project root, and run `deta update -e .env`.
