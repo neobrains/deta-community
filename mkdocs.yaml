@@ -110,6 +110,7 @@ nav:
       - Base: tutorials/base.md
       - Drive: tutorials/drive.md
   - Help: help.md
+  - Featured: featured.md
   - Frequently Asked Questions:
       - faq/index.md
       - Micros: faq/micros.md
