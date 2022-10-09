@@ -31,7 +31,7 @@ Items can be any JSON serializable data type, including lists, dictionaries,
 and primitive types like integers, strings, and booleans.
 
 It's time to start writing some code!
-```py title="Python REPL"
+```pycon
 # Import the Deta class.
 >>> from deta import Deta
 
@@ -67,7 +67,7 @@ Those aren't the only methods available, here are a few more.
 - `insert` is the same as `put`, but will throw an error if the key already exists
 - `put_many` adds multiple items
 
-```py title="Python REPL"
+```pycon
 # Update an existing item.
 >>> db.update({"age": 17}, key="user-123")
 >>> db.get("user-123")
@@ -146,13 +146,17 @@ The `fetch` method returns a `FetchResponse` object, which has the properties `c
 - `last` is the key of the last item in the response, which is useful for pagination
 
 An example query looks like this:
-```json
-{"name?contains": "Smith", "age?gt": 30, "is_alive": true}
+```py
+{
+    "name?contains": "Smith",
+    "age?gt": 30,
+    "is_alive": True,
+}
 ```
 
 This translates into "items where the `name` field contains the string `"Smith"`, and the `age` field is greater than `30`, and the `is_alive` field is `true`".
 
-```py title="Python REPL"
+```pycon
 # Fetch all items.
 >>> response = db.fetch()
 >>> response

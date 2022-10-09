@@ -58,22 +58,27 @@ Here's our new Python code,
 ```py title="main.py"
 --8<-- "docs/code/example_fastapi_app/main.py"
 ```
+
 A base HTML template,
-```html title="templates/base.html"
+```html+jinja title="templates/base.html"
 --8<-- "docs/code/example_fastapi_app/templates/base.html"
 ```
+
 And an index page template,
-```html title="templates/index.html"
+```html+jinja title="templates/index.html"
 --8<-- "docs/code/example_fastapi_app/templates/index.html"
 ```
+
 Some styles,
 ```css title="static/style.css"
 --8<-- "docs/code/example_fastapi_app/static/style.css"
 ```
+
 Some JavaScript,
 ```js title="static/script.js"
 --8<-- "docs/code/example_fastapi_app/static/script.js"
 ```
+
 And an image for good measure.
 
 `static/ram.jpg`

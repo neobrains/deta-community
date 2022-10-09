@@ -56,7 +56,7 @@
 !!! help ""
     If you don't have a `.deta` folder for a Micro anymore, but would like to use that Micro again,
     follow the steps below to regenerate the `.deta` folder.
-    ```sh
+    ```shell
     # Make a temporary directory.
     mkdir temp
     cd temp
