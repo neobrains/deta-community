@@ -52,7 +52,7 @@ It is recommended to read the official documentation for Deta [here](https://doc
 It contains much more in-depth information and references.
 
 ## Tutorials
-Check out the [Getting Started](/getting-started) page for a guide on how to get started with Deta.
+Check out the [Tutorials](/tutorials) page for a guide on how to get started with Deta.
 
 ## Help
 Make sure to read the [Help](/help) section for some guidelines on how to ask for help.

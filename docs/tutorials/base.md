@@ -8,7 +8,7 @@ Getting started with Deta Base is super easy, so let's see how it's done.
 
 ## Setting up your environment
 In order for your app to access Deta services such as Base and Drive, you need to set the `DETA_PROJECT_KEY` environment variable.
-Check out the section on [project keys](/getting-started/general#project-keys) for instructions on how to do that.
+Check out the section on [project keys](/tutorials/general#project-keys) for instructions on how to do that.
 
 Alternatively, you can also pass the project key as an argument to the `Deta` constructor class.
 ```py

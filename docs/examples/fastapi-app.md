@@ -26,7 +26,7 @@ This is just about the most basic FastAPI application you can make.
 Run it locally with `uvicorn main:app --reload`. Visit http://127.0.0.1:8000/ to see your app in action.
 
 ### Deploy to Deta
-If you haven't already installed the Deta CLI, read the [Getting Started](/getting-started) section.
+If you haven't already installed the Deta CLI, read the [Tutorials](/tutorials) section.
 
 Now, let's create a new Micro under the default project called `fastapi-app`.
 ```console

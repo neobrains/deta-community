@@ -10,7 +10,7 @@ $ deta login
 !!! help
     Can't login to the CLI through the browser? Check out the [FAQs](/faq/cli#issues-with-deta-login).
 
-Once you've logged in, you're ready to [start](/getting-started/general) using Deta!
+Once you've logged in, you're ready to start using Deta!
 
 ## Installing the SDK
 In order to use Bases and Drives in your code, you'll need to install the Deta SDK for your chosen language.

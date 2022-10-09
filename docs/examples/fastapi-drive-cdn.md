@@ -19,7 +19,7 @@ uvicorn[standard]
 `deta` will be used to access the Deta Drive, `fastapi` to create the app, and `python-multipart` for receiving files. As always, we need `uvicorn` to run the app.
 
 In order for your app to access Deta services such as Base and Drive, you need to set the `DETA_PROJECT_KEY` environment variable.
-Check out the section on [project keys](/getting-started/general#project-keys) for instructions on how to do that.
+Check out the section on [project keys](/tutorials/general#project-keys) for instructions on how to do that.
 
 ## Code
 Here is the Python code that will handle the API requests and responses.

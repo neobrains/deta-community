@@ -104,11 +104,11 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Getting Started:
-      - getting-started/index.md
-      - Micros: getting-started/micros.md
-      - Base: getting-started/base.md
-      - Drive: getting-started/drive.md
+  - Tutorials:
+      - tutorials/index.md
+      - Micros: tutorials/micros.md
+      - Base: tutorials/base.md
+      - Drive: tutorials/drive.md
   - Help: help.md
   - Frequently Asked Questions:
       - faq/index.md
