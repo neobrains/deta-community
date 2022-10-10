@@ -1,0 +1,7 @@
+{
+    "basic-deta": {
+        "about": "That's right, this very website is also built on Deta! It's a simple static site made with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served using [FastAPI](https://fastapi.tiangolo.com/).",
+        "details": "URL: https://basic.deta.dev  \n    Repository: https://github.com/AyushSehrawat/basic-deta  \n    Authors: @AyushSehrawat, @LemonPi314",
+        "preview": 0
+    }
+}

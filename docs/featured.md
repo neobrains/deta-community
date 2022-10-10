@@ -4,26 +4,34 @@ description: Featured projects built using Deta
 comments: true
 ---
 
-# Featured Projects
+# Featured Projects ( In Construction )
 This page lists projects that are built on Deta or use Deta in some way. If you have a project that you would like to be featured here, tell us in the comment section below.
 
-## Basic Deta
-URL: https://basic.deta.dev  
-Repository: https://github.com/AyushSehrawat/basic-deta  
-Authors: @AyushSehrawat, @LemonPi314
+### Basic Deta
 
-That's right, this very website is also built on Deta! It's a simple static site made with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served using [FastAPI](https://fastapi.tiangolo.com/).
+=== "About Basic Deta"
+    That's right, this very website is also built on Deta! It's a simple static site made with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served using [FastAPI](https://fastapi.tiangolo.com/).
 
-## Wastebin
-URL: https://wastebin.deta.dev  
-Repository: https://github.com/LemonPi314/wastebin  
-Author: @LemonPi314
+=== "Project Details"
+    URL: https://basic.deta.dev  
+    Repository: https://github.com/AyushSehrawat/basic-deta  
+    Authors: @AyushSehrawat, @LemonPi314
 
-Wastebin is the easiest and simplest way to share text and code, built from scratch using Deta.
+### Wastebin
 
-![Wastebin](https://yacdn.deta.dev/cdn/ylxymwfv)
+=== "About Wastebin"
+    Wastebin is the easiest and simplest way to share text and code, built from scratch using Deta.
 
-## Deta Status
+=== "Project Details"
+    URL: https://wastebin.deta.dev  
+    Repository: https://github.com/LemonPi314/wastebin  
+    Author: @LemonPi314
+
+=== "Preview"
+    ![Wastebin](https://yacdn.deta.dev/cdn/ylxymwfv)
+
+
+### Deta Status
 URL: https://service-status.deta.dev  
 Repository: https://github.com/LemonPi314/deta-status  
 Authors: @LemonPi314, @mikBighne98

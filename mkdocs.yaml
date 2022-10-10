@@ -111,6 +111,7 @@ nav:
       - Drive: tutorials/drive.md
   - Help: help.md
   - Featured: featured.md
+  - Test: test.md
   - Frequently Asked Questions:
       - faq/index.md
       - Micros: faq/micros.md
