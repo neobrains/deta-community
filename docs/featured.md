@@ -78,4 +78,4 @@ Features
 - Save As Image & Download As Text
 - Web Share Button
 
-![Pulp Preview](https://user-images.githubusercontent.com/90105839/194810281-54743105-8fc5-4da9-815c-f80689c485f3.png)
+![Pulp Preview](https://yacdn.deta.dev/cdn/sdhkmnre)
