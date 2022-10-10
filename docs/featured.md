@@ -62,3 +62,20 @@ Author: @LemonPi314
 HTTP Waifus is a collection of waifus that represent HTTP status codes, because even developers need some fun in their lives.
 
 ![HTTP Waifus](https://httpwaifus.deta.dev/api/418)
+
+## Pulp
+URL: https://pulp.deta.dev  
+Repository: https://github.com/dedomil/pulp (Private For Now)  
+Author: @dedomil, @yadavdotcodes
+
+With Pulp You Can Share Codes & Texts!
+
+Features
+- Multiple Themes
+- Keyboard Shortcuts
+- Pretty UI & Mobile Friendly
+- Auto Detect Language
+- Save As Image & Download As Text
+- Web Share Button
+
+![Pulp Preview](https://user-images.githubusercontent.com/90105839/194810281-54743105-8fc5-4da9-815c-f80689c485f3.png)
