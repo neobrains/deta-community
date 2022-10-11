@@ -15,20 +15,16 @@ jobs:
       - name: Set up Python environment
         uses: actions/setup-python@v2
         with:
-          python-version: 3.8
+          python-version: 3.9
 
       - name: Install dependencies
-        run: pip install -r requirements.txt && ls
+        run: pip install -r requirements.txt
 
       - name: Build featured.md
-        run: python3 feature.py && ls
- 
-      - name: Check if it's edited
-        run: cat ./docs/featured.md
-
+        run: python3 feature.py
 
       - name: Build site
-        run: mkdocs build --clean && ls
+        run: mkdocs build --clean
 
       - name: Deploy to Deta
         uses: BogDAAAMN/deta-deploy-action@v1.0.1
