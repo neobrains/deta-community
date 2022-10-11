@@ -18,17 +18,17 @@ jobs:
           python-version: 3.8
 
       - name: Install dependencies
-        run: pip3 install -r requirements.txt
+        run: pip3 install -r requirements.txt && ls
 
       - name: Build featured.md
-        run: python3 feature.py
+        run: python3 feature.py && ls
  
       - name: Check if it's edited
         run: cat ./docs/featured.md
 
 
       - name: Build site
-        run: mkdocs build --clean
+        run: mkdocs build --clean && ls
 
       - name: Deploy to Deta
         uses: BogDAAAMN/deta-deploy-action@v1.0.1
