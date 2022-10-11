@@ -22,15 +22,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Build featured.md
+        run: python feature.py
+        
       - name: Build site
         run: mkdocs build --clean
-
-      - name: Build featured.md
-        run: |
-          [ -f feature.json ] || echo "json file not found!"
-          [ -f feature.py ] || echo "py file not found!"
-          [ -f docs/featured.md ] || echo "md file not found!"
-          python feature.py
 
       - name: Deploy to Deta
         uses: BogDAAAMN/deta-deploy-action@v1.0.1
