@@ -5,7 +5,7 @@ comments: true
 ---
 
 # Featured Projects
-This page lists projects that are built on Deta or use Deta in some way. If you have a project that you would like to be featured here, tell us in the comment section below.
+This page lists projects that are built on Deta or use Deta in some way. If you have a project that you would like to be featured here, read the README.md file in the GitHub repo for instructions.
 
 ### Basic Deta
 <!--start basic-deta-->
