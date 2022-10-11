@@ -1,7 +1,47 @@
 {
     "basic-deta": {
         "about": "That's right, this very website is also built on Deta! It's a simple static site made with [MkDocs Material](https://squidfunk.github.io/mkdocs-material/) and served using [FastAPI](https://fastapi.tiangolo.com/).",
-        "details": "URL: https://basic.deta.dev  \n    Repository: https://github.com/AyushSehrawat/basic-deta  \n    Authors: @AyushSehrawat, @LemonPi314",
+        "details": "URL: https://basic.deta.dev\\nRepository: https://github.com/AyushSehrawat/basic-deta\\nAuthors: @AyushSehrawat, @LemonPi314",
         "preview": 0
+    },
+    "wastebin": {
+        "about": "Wastebin is the easiest and simplest way to share text and code, built from scratch using Deta.",
+        "details": "URL: https://wastebin.deta.dev\\nRepository: https://github.com/LemonPi314/wastebin\\nAuthor: @LemonPi314",
+        "preview": 1,
+        "image_uri": "https://yacdn.deta.dev/cdn/ylxymwfv"
+    },
+    "deta-status": {
+        "about": "Deta Status is a status page and uptime tracker for Deta Cloud services, Base, Drive, and Micros, and is itself hosted on Deta.",
+        "details": "URL: https://service-status.deta.dev\\nRepository: https://github.com/LemonPi314/deta-status\\nAuthors: @LemonPi314, @mikBighne98",
+        "preview": 0
+    },
+    "codebin": {
+        "about": "Codebin is another pastebin service built with Deta and Ace to provide editor like experience for pasting code snippets. For more information, check out the project repository.",
+        "details": "URL: https://codebin.deta.dev\\nRepository: https://github.com/jnsougata/codebin\\nAuthor: @jnsougata",
+        "preview": 1,
+        "image_uri": "https://yacdn.deta.dev/cdn/qtrkaaer"
+    },
+    "terminal": {
+        "about": "This website is a simple interface for accessing the terminal of a Deta Micro. It is part of a [collection of tools](https://deta-meta.deta.dev), which also includes a [file browser](https://files.deta.dev).",
+        "details": "URL: https://term.deta.dev\\nAuthor: @LemonPi314",
+        "preview": 1,
+        "image_uri": "https://yacdn.deta.dev/cdn/ekgdtxss"
+    },
+    "deta-orm": {
+        "about": "An async ORM for Deta Base.",
+        "details": "Repository: https://github.com/CircuitSacul/DetaORM\\nAuthor: @CircuitSacul",
+        "preview": 0
+    },
+    "http-waifus": {
+        "about": "HTTP Waifus is a collection of waifus that represent HTTP status codes, because even developers need some fun in their lives.",
+        "details": "URL: https://httpwaifus.deta.dev\\nRepository: https://github.com/LemonPi314/http-waifus\\nAuthor: @LemonPi314",
+        "preview": 1,
+        "image_uri": "https://httpwaifus.deta.dev/api/418"
+    },
+    "pulp": {
+        "about": "With Pulp You Can Share Codes & Texts! It includes features like - Multiple Themes, Keyboard Shortcuts, Pretty UI & Mobile Friendly, Auto Detect Language, Save As Image & Download As Text, Web Share Button, etc.",
+        "details": "URL: https://pulp.deta.dev\\nRepository: https://github.com/dedomil/pulp (Private For Now)\\nAuthor: @dedomil, @yadavdotcodes",
+        "preview": 1,
+        "image_uri": "https://yacdn.deta.dev/cdn/sdhkmnre"
     }
 }

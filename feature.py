@@ -1,28 +1,39 @@
-import os
-import sys
+import re
 import json
 
-with open("feature.json", "r") as f:
-    feature_data = json.load(f)
 
-with open("docs/test.md", "r") as f:
-    dat = f.readlines()
-    #print(dat)
-    for x in dat:
-        if x.startswith("<!--start"):
-            tag = str(x.split(" ")[1])[0:-4]
-            # Remove - if any and make every first letter capital
-            heading = tag.replace("-", " ").title()
-            index_of_tag = dat.index(x)
-            to_be_replaced = dat[index_of_tag+1]
-            content = feature_data[tag]
-            if content["preview"] == 1:
-                to_be_added = f"""=== "About {heading}"\n    {content["about"]}\n=== "Project Details"\n    {content["details"]}\n=== "Preview"\n    ![{heading}]({content["preview"]})\n""".encode("utf-8")
-            else:
-                to_be_added = f"""=== "About {heading}"\n    {content["about"]}\n=== "Project Details"\n    {content["details"]}\n""".encode("utf-8")
-            dat = [_.encode("utf-8") for _ in dat]
-            dat[index_of_tag+1] = to_be_added
-            #print(to_be_added)
-            
-            with open("docs/test.md", "bw+") as f:
-                f.writelines(dat)
+def parse():
+    with open("feature.json") as f:
+        json_data = json.load(f)
+    with open('docs/feature-boiler.md', 'rb') as f:
+        pattern = re.compile('<!--start (?:.*?)-->((.|\n)*?)<!--end-->')
+        name = re.compile('<!--start (.*?)-->')
+        chunk = f.read().decode('utf-8')
+        matches = pattern.finditer(chunk)
+        for match in matches:
+            full_block = match.group(0)
+            matched_content = match.group(1)
+            raw_project_name = name.search(full_block).group(1)
+            project_name = raw_project_name.replace("-", " ").title()
+            project = json_data.get(raw_project_name)
+            if project:
+                about = project['about'].replace('\\n', f'  \n\t')
+                details = project['details'].replace('\\n', f'  \n\t')
+                preview = project['preview']
+                content = (
+                    f"<!--start {raw_project_name}-->"
+                    f"""\n=== "About {project_name}"\n\t{about}"""
+                    f"""\n=== "Project Details"\n\t{details}"""
+                    )
+                if preview == 1:
+                    image_uri = project['image_uri']
+                    content += f"""\n=== "Preview"\n\t![{project_name}]({image_uri})\n<!--end-->"""
+                else:
+                    content += "\n<!--end-->"
+                chunk = chunk.replace(full_block, content)
+                
+    with open('docs/featured.md', 'wb') as f:
+        f.write(chunk.encode('utf-8'))
+
+if __name__ == '__main__':
+    parse()

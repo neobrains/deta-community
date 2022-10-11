@@ -25,6 +25,10 @@ jobs:
       - name: Build site
         run: mkdocs build --clean
 
+      - name: Build featured.md
+        run: |
+          python feature.py
+
       - name: Deploy to Deta
         uses: BogDAAAMN/deta-deploy-action@v1.0.1
         with:
