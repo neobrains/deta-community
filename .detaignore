@@ -1,3 +1,7 @@
-docs/
+docs
+overrides
 .github
 venv
+tmp
+feature.json
+mkdocs.yaml
