@@ -3,9 +3,9 @@ import json
 
 
 def parse():
-    with open("feature.json") as f:
+    with open("./feature.json") as f:
         json_data = json.load(f)
-    with open('docs/feature-boiler.md', 'rb') as f:
+    with open('./docs/feature-boiler.md', 'rb') as f:
         pattern = re.compile('<!--start (?:.*?)-->((.|\n)*?)<!--end-->')
         name = re.compile('<!--start (.*?)-->')
         chunk = f.read().decode('utf-8')
@@ -32,7 +32,7 @@ def parse():
                     content += "\n<!--end-->"
                 chunk = chunk.replace(full_block, content)
                 
-    with open('docs/featured.md', 'wb') as f:
+    with open('./docs/featured.md', 'wb') as f:
         f.write(chunk.encode('utf-8'))
 
 if __name__ == '__main__':
