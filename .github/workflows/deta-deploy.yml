@@ -22,7 +22,11 @@ jobs:
 
       - name: Build featured.md
         run: python3 feature.py
-        
+ 
+      - name: Check if it's edited
+        run: cat ./docs/featured.md
+
+
       - name: Build site
         run: mkdocs build --clean
 
