@@ -35,11 +35,9 @@ jobs:
         shell: bash
         run: |
           export DETA_ACCESS_TOKEN=${{ secrets.DETA_TOKEN }}
-          ~/.deta/bin/deta projects
           ~/.deta/bin/deta clone --name basic-deta --project fastapi .temp
           cp -r .temp/.deta .
           rm -rf .temp
-          rm -rf tmp
 
       - name: Deploy to Deta Micro
         shell: bash

@@ -66,3 +66,5 @@ Check out the [Examples](/examples) section for code examples and common snippet
 ## Contributors
 - @AyushSehrawat
 - @LemonPi314
+- @jnsougata
+- @mikBighne98
