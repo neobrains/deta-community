@@ -26,10 +26,24 @@ jobs:
       - name: Build site
         run: mkdocs build --clean
 
-      - name: Deploy to Deta
-        uses: BogDAAAMN/deta-deploy-action@v1.0.1
-        with:
-          deta-access-token: ${{ secrets.DETA_TOKEN }}
-          deta-name: 'basic-deta'
-          deta-project: 'fastapi'
-          deta-project-dir: '.'
+      - name: Install Deta CLI
+        shell: bash
+        run: curl -fsSL https://get.deta.dev/cli.sh | sh
+
+      # Get `.deta` metadata folder to use it in deployment
+      - name: Clone Deta Micro
+        shell: bash
+        run: |
+          export DETA_ACCESS_TOKEN=${{ secrets.DETA_TOKEN }}
+          ~/.deta/bin/deta projects
+          ~/.deta/bin/deta clone --name basic-deta --project fastapi .temp
+          cp -r .temp/.deta .
+          rm -rf .temp
+          rm -rf tmp
+
+      - name: Deploy to Deta Micro
+        shell: bash
+        run: |
+          export DETA_ACCESS_TOKEN=${{ secrets.DETA_TOKEN }}
+          cd .
+          ~/.deta/bin/deta deploy
