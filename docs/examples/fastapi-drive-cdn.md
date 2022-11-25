@@ -16,6 +16,9 @@ python-multipart
 uvicorn[standard]
 ```
 
+!!!note ""
+    No need to use a server like uvicorn, Deta has its own global server. Make sure you have the framework in your requirements.txt.
+
 `deta` will be used to access the Deta Drive, `fastapi` to create the app, and `python-multipart` for receiving files. As always, we need `uvicorn` to run the app.
 
 In order for your app to access Deta services such as Base and Drive, you need to set the `DETA_PROJECT_KEY` environment variable.

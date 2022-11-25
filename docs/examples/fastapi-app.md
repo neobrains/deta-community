@@ -53,6 +53,9 @@ jinja2
 uvicorn[standard]
 ```
 
+!!!note ""
+    No need to use a server like uvicorn, Deta has its own global server. Make sure you have the framework in your requirements.txt.
+
 ### Code
 Here's our new Python code,
 ```py title="main.py"
