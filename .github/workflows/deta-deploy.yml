@@ -28,9 +28,7 @@ jobs:
 
       - name: Install Deta CLI
         shell: bash
-        run: |
-        curl -fsSL https://get.deta.dev/cli.sh | sh
-
+        run: curl -fsSL https://get.deta.dev/cli.sh | sh
 
       # Get `.deta` metadata folder to use it in deployment
       - name: Clone Deta Micro
