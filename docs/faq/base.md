@@ -16,3 +16,7 @@
 ### How do I fetch the last item in a Base?
 !!! help ""
     Refer to [Discussion #344](https://github.com/orgs/deta/discussions/344).
+
+### How to delete a Base?
+!!! help ""
+    You can use the SDK / HTTP API to remove all the records in it. Then it will be deleted automatically.

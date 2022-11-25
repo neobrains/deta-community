@@ -69,6 +69,17 @@
     rm -rf temp
     ```
 
+### orjson related issue
+!!! help ""
+    In case you face this issue you have to remove orjson from your code/requirements.txt and then run `deta deploy` again.
+
+
+### How to redeploy/delete a Micro?
+!!! help ""
+    You can redeploy a micro by running `deta deploy` again.
+
+    You can delete a micro by deleting the `.deta` folder and deleting from the dashboard. To create a new Micro now, run `deta new <arguments here> again`.
+
 ----
 
 More FAQs regarding Micros can be found [here](https://docs.deta.sh/docs/micros/faqs_micros).
