@@ -1,10 +1,10 @@
 ---
 title: Home
-description: Welcome to Basic Deta. Here you can find the basic docs, FAQs, and code examples.
+description: Welcome to Basic Deta. Here you will find the basic documentation, FAQs and code examples.
 ---
 
 # Basic Deta
-Welcome to Basic Deta. Here you can find the basic docs, FAQs, and code examples.
+Welcome to Basic Deta. Here you will find the basic documentation, FAQs and code examples.
 
 !!! info
     This is **not** official documentation for Deta. This is a community project.
@@ -60,7 +60,7 @@ Make sure to read the [Help](/help) section for some guidelines on how to ask fo
 ## Frequently Asked Questions
 Read the [FAQs](/faq) page for solutions to common problems.
 
-## Code Examples
+## Code Examples (Removed For Now)
 Check out the [Examples](/examples) section for code examples and common snippets.
 
 ## Contributors

@@ -45,3 +45,6 @@ If you make any changes to the Micro, you can redeploy it by running the `deta d
 
 !!! tip
     You can also use `deta watch` to watch for changes in the directory and deploy the Micro automatically.
+
+!!! tip
+    You can also update the environment variables! Checkout the official docs.

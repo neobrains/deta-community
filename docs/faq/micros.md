@@ -80,6 +80,10 @@
 
     You can delete a micro by deleting the `.deta` folder and deleting from the dashboard. To create a new Micro now, run `deta new <arguments here> again`.
 
+### Support for Python3.11
+!!! help ""
+    Current Deta micros are running on AWS Lambda under the hood and they have python runtime support upto 3.9. So that's something Deta micros will support once AWS Lambda start supporting those runtimes.
+
 ----
 
 More FAQs regarding Micros can be found [here](https://docs.deta.sh/docs/micros/faqs_micros).

@@ -8,6 +8,15 @@ as well as solutions to common problems.
 - [Drive](/faq/drive) - Frequently asked questions about Deta Drive.
 - [CLI](/faq/cli) - Frequently asked questions about the Deta CLI.
 
+## Quick Summary of Micros
+- Timeout after 10 seconds
+- Memory per execution is 512MB
+- No state is maintained between executions
+- You can't write to the file system except for the `/tmp` directory , which also gets cleared after some time
+- You can send/receive a maximum of 5.5 MB of data in a request
+- There's a limit on number of requests per second but if you don't exceed the limit you won't get any issues.
+
+
 ## Some common faqs regarding Deta
 
 ### What is this service for ?
